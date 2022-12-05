@@ -87,8 +87,6 @@ export const slice = createSlice({
       const s = state;
       const patients = action.payload.data as Patient[];
       s.patients = patients;
-    }).addCase(getPatients.rejected, (state) => {
-      const s = state;
     });
     // patient
     builder.addCase(getPatient.fulfilled, (state, action) => {
